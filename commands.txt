@@ -1,9 +1,4 @@
-lmuir@DESKTOP-DHEQI1C:~$ git cd quiz01
-git: 'cd' is not a git command. See 'git --help'.
-
-The most similar command is
-        add
-lmuir@DESKTOP-DHEQI1C:~$ cd quiz01
+lmuir@DESKTOP-DHEQI1C:~/quiz01$ git clone https://github.com/lmuir21/qtm350-quiz01.git
 lmuir@DESKTOP-DHEQI1C:~/quiz01$ cd qtm350-quiz01
 lmuir@DESKTOP-DHEQI1C:~/quiz01/qtm350-quiz01$ git status
 On branch main
