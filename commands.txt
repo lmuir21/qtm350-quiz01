@@ -1,0 +1,202 @@
+lmuir@DESKTOP-DHEQI1C:~$ git cd quiz01
+git: 'cd' is not a git command. See 'git --help'.
+
+The most similar command is
+        add
+lmuir@DESKTOP-DHEQI1C:~$ cd quiz01
+lmuir@DESKTOP-DHEQI1C:~/quiz01$ cd qtm350-quiz01
+lmuir@DESKTOP-DHEQI1C:~/quiz01/qtm350-quiz01$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   commands.txt
+
+lmuir@DESKTOP-DHEQI1C:~/quiz01/qtm350-quiz01$ git commit -m "Add commands.txt"
+[main 2b6c2c8] Add commands.txt
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 commands.txt
+lmuir@DESKTOP-DHEQI1C:~/quiz01/qtm350-quiz01$ git branch -a
+* main
+  remotes/origin/HEAD -> origin/main
+  remotes/origin/main
+lmuir@DESKTOP-DHEQI1C:~/quiz01/qtm350-quiz01$ git checkout -b feature-update
+Switched to a new branch 'feature-update'
+lmuir@DESKTOP-DHEQI1C:~/quiz01/qtm350-quiz01$ mkdir reports
+lmuir@DESKTOP-DHEQI1C:~/quiz01/qtm350-quiz01$ cd reports
+lmuir@DESKTOP-DHEQI1C:~/quiz01/qtm350-quiz01/reports$ touch summary.md
+lmuir@DESKTOP-DHEQI1C:~/quiz01/qtm350-quiz01/reports$ echo "This document provides a summary of the project updates." >> summary.md
+lmuir@DESKTOP-DHEQI1C:~/quiz01/qtm350-quiz01/reports$ git add .
+lmuir@DESKTOP-DHEQI1C:~/quiz01/qtm350-quiz01/reports$ git commit -m "Add reports directory"
+[feature-update 0e1e256] Add reports directory
+ 1 file changed, 1 insertion(+)
+ create mode 100644 reports/summary.md
+lmuir@DESKTOP-DHEQI1C:~/quiz01/qtm350-quiz01/reports$ touch
+{file1.txt, file2.txt, file3.txt}
+lmuir@DESKTOP-DHEQI1C:~/quiz01/qtm350-quiz01/reports$ mv dat
+a/raw-data.csv data/input-data.csv
+mv: cannot stat 'data/raw-data.csv': No such file or directory
+lmuir@DESKTOP-DHEQI1C:~/quiz01/qtm350-quiz01/reports$ ls
+file2.txt,  file3.txt}  summary.md  {file1.txt,
+lmuir@DESKTOP-DHEQI1C:~/quiz01/qtm350-quiz01/reports$
+file2.txt,  file3.txt}  summary.md  {file1.txt,
+lmuir@DESKTOP-DHEQI1C:~/quiz01/qtm350-quiz01/reports$ git lo
+g
+commit 0e1e256d5a3e08037ba40e80ddc244669eac2753 (HEAD -> feature-update)
+Author: LianeM <lmuir@emory.edu>
+Date:   Wed Feb 12 16:22:12 2025 -0500
+
+    Add reports directory
+
+commit 2b6c2c8273609feb8a0a9bc61fd1bc5c579bc092 (main)
+Author: LianeM <lmuir@emory.edu>
+Date:   Wed Feb 12 16:17:54 2025 -0500
+
+    Add commands.txt
+
+commit 4258465f905c91b262f8891fc3eda1ad7f30041f (origin/main, origin/HEAD)
+Author: Danilo Freire <danilofreire@gmail.com>
+Date:   Tue Feb 11 19:16:30 2025 -0500
+
+    first commit
+lmuir@DESKTOP-DHEQI1C:~/quiz01/qtm350-quiz01/reports$ git st
+atus
+On branch feature-update
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        file2.txt,
+        file3.txt}
+        {file1.txt,
+
+nothing added to commit but untracked files present (use "git add" to track)
+lmuir@DESKTOP-DHEQI1C:~/quiz01/qtm350-quiz01/reports$ ls feature-update
+ls: cannot access 'feature-update': No such file or directory
+lmuir@DESKTOP-DHEQI1C:~/quiz01/qtm350-quiz01/reports$ git st
+atus
+On branch feature-update
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        file2.txt,
+        file3.txt}
+        {file1.txt,
+
+nothing added to commit but untracked files present (use "git add" to track)
+lmuir@DESKTOP-DHEQI1C:~/quiz01/qtm350-quiz01/reports$ mv dat
+a/raw-data.csv data/input-data.csv
+mv: cannot stat 'data/raw-data.csv': No such file or directory
+lmuir@DESKTOP-DHEQI1C:~/quiz01/qtm350-quiz01/reports$ cd data
+-bash: cd: data: No such file or directory
+lmuir@DESKTOP-DHEQI1C:~/quiz01/qtm350-quiz01/reports$ cd qtm
+350-quiz01
+-bash: cd: qtm350-quiz01: No such file or directory
+lmuir@DESKTOP-DHEQI1C:~/quiz01/qtm350-quiz01/reports$ pwd
+/home/lmuir/quiz01/qtm350-quiz01/reports
+lmuir@DESKTOP-DHEQI1C:~/quiz01/qtm350-quiz01/reports$ tree
+Command 'tree' not found, but can be installed with:
+sudo snap install tree  # version 2.1.3+pkg-5852, or
+sudo apt  install tree  # version 2.1.1-2
+See 'snap info tree' for additional versions.
+lmuir@DESKTOP-DHEQI1C:~/quiz01/qtm350-quiz01/reports$ ls
+file2.txt,  file3.txt}  summary.md  {file1.txt,
+lmuir@DESKTOP-DHEQI1C:~/quiz01/qtm350-quiz01/reports$ cd qui
+z01
+-bash: cd: quiz01: No such file or directory
+lmuir@DESKTOP-DHEQI1C:~/quiz01/qtm350-quiz01/reports$ cd qui
+cd ..
+-bash: cd: too many arguments
+lmuir@DESKTOP-DHEQI1C:~/quiz01/qtm350-quiz01/reports$ cd ..
+lmuir@DESKTOP-DHEQI1C:~/quiz01/qtm350-quiz01$ ls
+README.md  commands.txt  data  docs  reports  scripts
+lmuir@DESKTOP-DHEQI1C:~/quiz01/qtm350-quiz01$ cd data
+lmuir@DESKTOP-DHEQI1C:~/quiz01/qtm350-quiz01/data$ mv data/r
+aw-data.csv data/input-data.csv
+mv: cannot stat 'data/raw-data.csv': No such file or directory
+lmuir@DESKTOP-DHEQI1C:~/quiz01/qtm350-quiz01/data$ ls
+raw-data.csv
+lmuir@DESKTOP-DHEQI1C:~/quiz01/qtm350-quiz01/data$ mv raw-da
+ta.csv input-data.csv
+lmuir@DESKTOP-DHEQI1C:~/quiz01/qtm350-quiz01/data$ cd.
+Command 'cd.' not found, did you mean:
+  command 'cde' from deb cde (0.1+git9-g551e54d-1.2)
+  command 'cdw' from deb cdw (0.8.1-3)
+  command 'cdi' from deb cdo (2.3.0-1)
+  command 'cd5' from deb cd5 (0.1-4)
+  command 'cdo' from deb cdo (2.3.0-1)
+  command 'cdb' from deb tinycdb (0.81-1)
+  command 'cdp' from deb irpas (0.10-9)
+Try: sudo apt install <deb name>
+lmuir@DESKTOP-DHEQI1C:~/quiz01/qtm350-quiz01/data$ cd..
+cd..: command not found
+lmuir@DESKTOP-DHEQI1C:~/quiz01/qtm350-quiz01/data$ cd ..
+lmuir@DESKTOP-DHEQI1C:~/quiz01/qtm350-quiz01$ cd scripts
+lmuir@DESKTOP-DHEQI1C:~/quiz01/qtm350-quiz01/scripts$ mkdir
+backup
+lmuir@DESKTOP-DHEQI1C:~/quiz01/qtm350-quiz01/scripts$ cp scripts/*.py scripts/backup
+cp: cannot stat 'scripts/*.py': No such file or directory
+lmuir@DESKTOP-DHEQI1C:~/quiz01/qtm350-quiz01/scripts$ cp ./*
+.py
+cp: target './03-data-modelling.py': Not a directory
+lmuir@DESKTOP-DHEQI1C:~/quiz01/qtm350-quiz01/scripts$ cp ./*
+.py ./backup/
+lmuir@DESKTOP-DHEQI1C:~/quiz01/qtm350-quiz01/scripts$ ls
+01-setup.py          03-data-modelling.py
+02-data-cleaning.py  backup
+lmuir@DESKTOP-DHEQI1C:~/quiz01/qtm350-quiz01/scripts$ cd ..
+lmuir@DESKTOP-DHEQI1C:~/quiz01/qtm350-quiz01$ rm docs/docume
+ntation.md
+lmuir@DESKTOP-DHEQI1C:~/quiz01/qtm350-quiz01$ git add .
+lmuir@DESKTOP-DHEQI1C:~/quiz01/qtm350-quiz01$ git commit -m
+"Update project files"
+[feature-update 7a7f000] Update project files
+ 8 files changed, 1 deletion(-)
+ rename data/{raw-data.csv => input-data.csv} (100%)
+ delete mode 100644 docs/documentation.md
+ create mode 100644 reports/file2.txt,
+ create mode 100644 reports/file3.txt}
+ create mode 100644 reports/{file1.txt,
+ create mode 100644 scripts/backup/01-setup.py
+ create mode 100644 scripts/backup/02-data-cleaning.py
+ create mode 100644 scripts/backup/03-data-modelling.py
+lmuir@DESKTOP-DHEQI1C:~/quiz01/qtm350-quiz01$ touch .gitigno
+re
+lmuir@DESKTOP-DHEQI1C:~/quiz01/qtm350-quiz01$ echo "temp/
+dataset0?.csv" >> .gitignore
+lmuir@DESKTOP-DHEQI1C:~/quiz01/qtm350-quiz01$ cat .gitignore
+temp/
+dataset0?.csv
+lmuir@DESKTOP-DHEQI1C:~/quiz01/qtm350-quiz01$ git add .
+lmuir@DESKTOP-DHEQI1C:~/quiz01/qtm350-quiz01$ git add . && git commit -m "Add .gitignore file"
+[feature-update 99d44f2] Add .gitignore file
+ 1 file changed, 2 insertions(+)
+ create mode 100644 .gitignore
+lmuir@DESKTOP-DHEQI1C:~/quiz01/qtm350-quiz01$ git checkout m
+ain
+Switched to branch 'main'
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+lmuir@DESKTOP-DHEQI1C:~/quiz01/qtm350-quiz01$ git merge feat
+ure-update
+Updating 2b6c2c8..99d44f2
+Fast-forward
+ .gitignore                            | 2 ++
+ data/{raw-data.csv => input-data.csv} | 0
+ docs/documentation.md                 | 1 -
+ reports/file2.txt,                    | 0
+ reports/file3.txt}                    | 0
+ reports/summary.md                    | 1 +
+ reports/{file1.txt,                   | 0
+ scripts/backup/01-setup.py            | 0
+ scripts/backup/02-data-cleaning.py    | 0
+ scripts/backup/03-data-modelling.py   | 0
+ 10 files changed, 3 insertions(+), 1 deletion(-)
+ create mode 100644 .gitignore
+ rename data/{raw-data.csv => input-data.csv} (100%)
+ delete mode 100644 docs/documentation.md
+ create mode 100644 reports/file2.txt,
+ create mode 100644 reports/file3.txt}
+ create mode 100644 reports/summary.md
+ create mode 100644 reports/{file1.txt,
+ create mode 100644 scripts/backup/01-setup.py
+ create mode 100644 scripts/backup/02-data-cleaning.py
+ create mode 100644 scripts/backup/03-data-modelling.py
